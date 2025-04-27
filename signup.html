@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .center ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .center ul li {
+            cursor: pointer;
+        }
+
+        .right {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btnlink {
+            background-color: #007BFF;
+            color: white;
+            border: 1px solid rgba(0, 0, 0, 0.331);
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn2link{
+            background-color:#4CAF4F;;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .btn3link{
+            width: 100px;
+            background-color:#4CAF4F;;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .btn1link{
+            background-color: white;
+            margin-top: 5px;
+        }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+      gap: 40px;
+    }
+
+    .text-section {
+      flex: 1;
+      text-align: left;
+    }
+
+    .text-section h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .text-section p {
+      font-size: 18px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .image-section {
+      flex: 1;
+      text-align: right;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .greentext{
+        color: green;
+    }
+
+    /* Responsive for small screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .text-section, .image-section {
+        text-align: center;
+      }
+    }
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.clients {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.client-logos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.client-logos img {
+  width: 60px;
+  height: auto;
+}
+
+.manage-community {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f7f7f7;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.content-section .image img {
+  width: 300px;
+  height: auto;
+}
+
+.content-section .text {
+  max-width: 500px;
+}
+
+.content-section button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-section button:hover {
+  background: #218838;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.business-help {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.left-content h4 {
+  color: gray;
+  font-size: 18px;
+}
+
+.left-content h1 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: green;
+}
+
+.subtitle {
+  margin: 10px 0 20px;
+  color: #666;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat-item {
+  background: #f9f9f9;
+  padding: 20px;
+  flex: 1 1 200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.right-content {
+  flex: 1;
+  text-align: center;
+}
+
+.right-content img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.right-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.right-content p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.right-content button {
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-content button:hover {
+  background: #218838;
+}
+
+.testimonial {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.testimonial img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.customer-name {
+  font-weight: bold;
+}
+
+.customer-company {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.testimonial a {
+  color: green;
+  text-decoration: none;
+}
+
+.testimonial a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Blog Section */
+.blog-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+.blog-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.blog-section p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+}
+
+.blog-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  color: green;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-top h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-top button {
+  padding: 10px 20px;
+  background: #28a745;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-top button:hover {
+  background: #218838;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex: 2;
+}
+
+.link-group h4 {
+  margin-bottom: 10px;
+}
+
+.link-group a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.link-group a:hover {
+  color: #fff;
+}
+
+.link-group input {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-section p {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #cccccc;
+  margin-right: 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  color: #cccccc;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="Mynavbar">
+        <div class="row">
+            <div class="left">
+                <img src="Logo@2x.png" alt="Logo">
+            </div>
+            <div class="center">
+                <ul class="linkParent">
+                    <li class="link">Home</li>
+                    <li class="link">Features</li>
+                    <li class="link">Community</li>
+                    <li class="link">Contact</li>
+                    <li class="link">Support</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="btn1link">login</div>
+                <div class="btn2link">singup</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2 col of image and text are start from here -->
+
+    
+  <div class="container">
+    <div class="text-section">
+      <h1>Lessons and insights <br> <span class="greentext">from 8 years</span></h1>
+      <p>where to grow your business as a photographer: site or social media</p>
+      <div class="btn3link">Rigester</div>
+
+    </div>
+    <div class="image-section">
+      <img src="Illustration.png" alt="Sample Image" width="300PX">
+    </div>
+  </div>
+
+  
+
+  <section class="clients">
+    <h2>Our Clients</h2>
+    <p>We have been working with some Fortune 500+ clients</p>
+    <div class="client-logos">
+      <img src="logo1.png" alt="Logo 1">
+      <img src="Logo (14).png" alt="Logo 2">
+      <img src="Logo (15).png" alt="Logo 3">
+      <img src="Logo (16).png" alt="Logo 4">
+      <img src="Logo (17).png" alt="Logo 5">
+      <img src="Logo (18).png" alt="Logo 6">
+      <img src="Logo (15).png" alt="Logo 7">
+
+    </div>
+  </section>
+
+  <section class="manage-community">
+    <h2>Manage your entire community<br>in a single system</h2>
+    <p>Who is Nextcent suitable for?</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="Icon (1).png" alt="icon 1">
+        <h3>Membership Organisations</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments.</p>
+      </div>
+      <div class="card">
+        <img src="Icon (2).png" alt="icon 2">
+        <h3>National Associations</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments.</p>
+      </div>
+      <div class="card">
+        <img src="Icon (3).png" alt="icon 3">
+        <h3>Clubs And Groups</h3>
+        <p>Our membership management software provides full automation of membership renewals and payments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="image">
+      <img src="Frame 35.png" alt="Illustration" />
+    </div>
+    <div class="text">
+      <h2>The unseen of spending three years at Pixelgrade</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac accumsan quam, eget vestibulum risus. Pellentesque placerat, nunc vitae mattis feugiat.</p>
+      <button>Learn More</button>
+    </div>
+  </section>
+
+  <section class="business-help">
+    <div class="top-section">
+      <div class="left-content">
+        <h4>Anonymous</h4>
+        <h1>Helping a local business reinvent itself</h1>
+        <p class="subtitle">We reached here with our hard work and dedication</p>
+      
+        <div class="stats">
+          <div class="stat-item">
+            <h2>2,245,341</h2>
+            <p>Members</p>
+          </div>
+          <div class="stat-item">
+            <h2>46,328</h2>
+            <p>Clubs</p>
+          </div>
+          <div class="stat-item">
+            <h2>828,867</h2>
+            <p>Event Bookings</p>
+          </div>
+          <div class="stat-item">
+            <h2>1,926,436</h2>
+            <p>Payments</p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <div class="center">
+        <img src="" alt="Phone Illustration">
+        <h2>How to design your site footer like we did</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+<section>
+    <div class="testimonial">
+      <img src="66af9e158d309dd1704c49bad560036519bae324.jpg" alt="Tesla Logo">
+      <p class="testimonial-text">
+        Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+      </p>
+      <p class="customer-name">Tim Smith</p>
+      <p class="customer-company">British Dragon Boat Racing Association</p>
+      <a href="#">Meet all customers →</a>
+    </div>
+  </section>
+
+  <!-- 333 -->
+
+  <!-- Blog Section -->
+  <section class="blog-section">
+    <h1>Caring is the new marketing</h1>
+    <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lots more.</p>
+
+    <div class="blog-cards">
+      <div class="card">
+        <img src="7776b16fd94779a6038df61ab3795e3388d1c731.jpg" alt="Blog 1">
+        <div class="card-content">
+          <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+          <a href="#">Read more →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="5b68113ad80dfca071d88cdc680544ed9cbcf9ed.jpg" alt="Blog 2">
+        <div class="card-content">
+          <p>What are your safeguarding responsibilities and how can you manage them?</p>
+          <a href="#">Read more →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="a353eb29cb260e5e45b8deb813272ee1a31ac6f1.jpg" alt="Blog 3">
+        <div class="card-content">
+          <p>Revamping the Membership Model with Triathlon Australia</p>
+          <a href="#">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-top">
+      <h2>Pellentesque suscipit fringilla libero eu.</h2>
+      <button>Get a Demo</button>
+    </div>
+
+    <div class="footer-main">
+      <div class="footer-left">
+        <img src="Logo@2x.png" alt="logo">
+        
+        <p>Copyright © 2020 Nexcent ltd. All rights reserved</p>
+        <div class="social-icons">
+          <img src="facebook-icon.png" alt="Facebook">
+          <img src="twitter-icon.png" alt="Twitter">
+          <img src="linkedin-icon.png" alt="LinkedIn">
+          <img src="youtube-icon.png" alt="YouTube">
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Company</h4>
+          <a href="#">About us</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact us</a>
+          <a href="#">Pricing</a>
+        </div>
+
+        <div class="link-group">
+          <h4>Support</h4>
+          <a href="#">Help center</a>
+          <a href="#">Terms of service</a>
+          <a href="#">Legal</a>
+          <a href="#">Privacy policy</a>
+        </div>
+
+        <div class="link-group">
+          <h4>Stay up to date</h4>
+          <input type="email" placeholder="Your email address">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 444 -->
+
+  <title>Website Footer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Company Info -->
+      <div class="footer-section about">
+        <img src="logo.png" alt="Company Logo" class="logo"/>
+        <p>
+          Nexcent is a leading platform providing solutions for community management, helping organizations streamline their operations.
+        </p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-section links">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-section links">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Legal</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section contact">
+        <h3>Contact</h3>
+        <p>1234 Street Name,<br/>City, Country</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: info@nexcent.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Nexcent. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
